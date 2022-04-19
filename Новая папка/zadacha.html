@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 'еще вариант';
+        let y = 'урааа';
+        let Xarray = [87, 2, 34213];
+        let Yarray = ['ура', 'ура2', 33, 'еще текст', 99, -100, 'вариaнт1', 'вариант2'];
+        let rand = Math.floor(Math.random()*Xarray.length); //выбираем рандомное число
+        let symbols = {
+  "А": "1",
+  "Б": "2",
+  "В": "3",
+  "Г": "4",
+  "Д": "5",
+  "Е": "6",
+  "Ё": "7",
+  "Ж": "8",
+  "З": "9",
+  "Й": "10",
+  'И': '11',
+  "К": "12",
+  "Л": "13",
+  "М": "14",
+  "Н": "15",
+  "О": "16",
+  "П": "17",
+  "Р": "18",
+  "С": "19",
+  "Т": "20",
+  "У": "21",
+  "Ф": "22",
+  "Ц": "23",
+  "Ч": "24",
+  "Ш": "25",
+  "Щ": "26",
+  "Ъ": "27",
+  
+  "Ы": "28",
+  "ь": "29",
+  "э": "30",
+  "ю": "31",
+  "я": "32",
+};
+
+
+var str = 'ура';
+Yarray = str.replace(/./gi,$0=>symbols[$0.toUpperCase()]||$0);
+
+var str = 'еще';
+Yarray = str.replace(/./gi,$0=>symbols[$0.toUpperCase()]||$0);
+
+var str = 'вариант';
+Yarray = str.replace(/./gi,$0=>symbols[$0.toUpperCase()]||$0);
+
+        let rArr = Xarray[rand];
+        let result = x+' '+rArr+' '+y+ ' '+Math.max(Yarray);
+
+        alert (result);
+    </script>
+</body>
+</html>
